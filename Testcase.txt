@@ -1,0 +1,101 @@
+### Test Case: Resume Content and Layout Verification
+
+---
+
+ **Test Case 1: Verify Personal Information Display**
+- **Objective:** Ensure the user's personal information is displayed correctly.
+- **Steps:**
+  1. Open the resume document.
+  2. Verify that "John Doe" is displayed at the top.
+  3. Check that the job title "Web Developer" is directly below the name.
+- **Expected Result:** Name and job title are displayed correctly in the correct order.
+
+**Test Case 2: Validate Contact Information**
+- **Objective:** Ensure that contact details are correct and functional.
+- **Steps:**
+  1. Verify that email, phone number, LinkedIn, and GitHub are present and formatted correctly.
+  2. Click on each contact link (email, LinkedIn, GitHub).
+- **Expected Result:** All contact details are correctly formatted, and links navigate to the correct destinations.
+
+ **Test Case 3: Verify Professional Summary**
+- **Objective:** Ensure the professional summary section contains relevant details.
+- **Steps:**
+  1. Check that the Professional Summary section exists.
+  2. Read the summary to ensure it accurately reflects the candidate’s skills and experience.
+- **Expected Result:** Professional summary is present and contains valid, relevant information.
+
+ **Test Case 4: Verify Work Experience Entries**
+- **Objective:** Ensure the work experience section has at least two job entries with complete information.
+- **Steps:**
+  1. Confirm the presence of two job entries.
+  2. Ensure each entry includes a job title, company name, dates, and bullet points describing responsibilities/achievements.
+- **Expected Result:** Work experience section has at least two jobs, with all required details properly displayed.
+
+**Test Case 5: Validate Education Section**
+- **Objective:** Ensure the education section is present and complete.
+- **Steps:**
+  1. Check that the Education section exists.
+  2. Verify the degree, institution name, and graduation date are displayed.
+- **Expected Result:** Education section includes all necessary details.
+
+ **Test Case 6: Verify Skills Section**
+- **Objective:** Ensure that the skills section is present and lists relevant technical skills.
+- **Steps:**
+  1. Check that the Skills section is present.
+  2. Verify that relevant technical skills are listed.
+- **Expected Result:** Skills section is complete and lists appropriate technical skills.
+
+---
+
+**Layout Testing**
+
+**Test Case 7: Responsive Design Testing**
+- **Objective:** Ensure the resume layout is responsive on various screen sizes.
+- **Steps:**
+  1. View the resume on desktop, tablet, and mobile screens.
+  2. Check that text remains readable and no content overflows.
+- **Expected Result:** The layout is consistent, readable, and well-formatted across all screen sizes.
+
+ **Test Case 8: Cross-Browser Compatibility**
+- **Objective:** Ensure consistent appearance in different browsers.
+- **Steps:**
+  1. Open the resume in Chrome, Firefox, Safari, and Edge.
+  2. Verify the layout and content render consistently in all browsers.
+- **Expected Result:** The resume looks consistent across different browsers.
+**Test Case 9: Print Layout Verification**
+- **Objective:** Ensure the resume prints or saves as PDF with correct formatting.
+- **Steps:**
+  1. Print the resume or save it as a PDF.
+  2. Verify that all sections are visible, and formatting is preserved.
+- **Expected Result:** Printed or PDF version maintains correct formatting and shows all content.
+
+---
+
+ **Functionality Testing**
+
+**Test Case 10: Link Functionality**
+- **Objective:** Ensure all external links function correctly.
+- **Steps:**
+  1. Click on the email link to ensure it opens the default email client.
+  2. Click on LinkedIn and GitHub links to ensure they open in a new tab.
+- **Expected Result:** All links work as expected and open the correct destinations.
+
+---
+
+ **Usability Testing**
+
+**Test Case 11: Font and Readability Testing**
+- **Objective:** Ensure the text is readable on all devices.
+- **Steps:**
+  1. Verify that font sizes are appropriate and readable on desktop, tablet, and mobile devices.
+  2. Ensure sufficient contrast between text and background.
+- **Expected Result:** Font is legible, and there is sufficient contrast for easy reading.
+Test Case 12: Information Hierarchy and Scannability**
+- **Objective:** Ensure the resume is easy to scan for key information.
+- **Steps:**
+  1. Review the layout for clear section headings and subheadings.
+  2. Confirm that key information like name, contact info, and current job is easy to find.
+- **Expected Result:** Headings are clear, and important information is prominently displayed.
+
+
+These test cases cover functional, layout, and usability aspects of the resume to ensure completeness and professionalism.
