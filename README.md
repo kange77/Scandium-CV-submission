@@ -8,3 +8,4 @@ This project contains an HTML resume with CSS styling. The following sections ou
 
 - `index.html`: The main HTML file containing the resume content and structure.
 - `styles.css`: (Embedded in the HTML file) Contains all the CSS styles for the resume.
+Testcases.txt containing testcase.
