@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken Kange - SDET Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #27ae60;
+            --accent-color: #e74c3c;
+            --text-color: #34495e;
+            --background-color: #ecf0f1;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin: -30px -30px 30px -30px;
+            border-radius: 8px 8px 0 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .job-title {
+            font-size: 1.3em;
+            margin-top: 10px;
+            color: var(--secondary-color);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.6em;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .job, .education {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .job:before, .education:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+        .job-title, .degree {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 1.1em;
+        }
+        .company, .school {
+            font-style: italic;
+            color: var(--primary-color);
+        }
+        .date {
+            color: var(--accent-color);
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .skill {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+        .skill:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        #contact p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        #contact p::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #contact p:nth-child(1)::before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2327ae60"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>');
+        }
+        #contact p:nth-child(2)::before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2327ae60"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>');
+        }
+        #contact p:nth-child(3)::before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2327ae60"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>');
+        }
+        #contact p:nth-child(4)::before {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2327ae60"><path d="M12 0a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.2-1.8-1.2-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.3 1.1-3.1-.1-.3-.5-1.5.1-3.2 0 0 .9-.3 3 1.1a10.5 10.5 0 0 1 5.5 0c2.1-1.4 3-1.1 3-1.1.6 1.7.2 3 .1 3.2.6.8 1.1 1.8 1.1 3.1 0 4.5-2.7 5.5-5.4 5.8.4.4.8 1.1.8 2.3v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 0z"/></svg>');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Ken Kange</h1>
+            <p class="job-title">Software Development Engineer in Test (SDET)</p>
+        </header>
+
+        <section class="section" id="contact">
+            <h2>Contact Information</h2>
+            <p><a href="mailto:kangeken213@gmail.com">kangeken213@gmail.com</a></p>
+            <p>(123) 456-7890</p>
+            <p><a href="https://www.linkedin.com/in/ken-kange-3aa387b9" target="_blank" rel="noopener noreferrer">linkedin.com/in/ken-kange-3aa387b9</a></p>
+            <p><a href="https://github.com/kange77" target="_blank" rel="noopener noreferrer">github.com/kange77</a></p>
+        </section>
+
+        <section class="section" id="summary">
+            <h2>Professional Summary</h2>
+            <p>Results-driven SDET with 5+ years of experience in software testing and quality assurance. Expertise in developing robust automated test frameworks, conducting comprehensive manual testing, and collaborating effectively with cross-functional teams. Committed to delivering high-quality software products through innovative testing strategies and continuous improvement of QA processes.</p>
+        </section>
+
+        <section class="section" id="experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <p><span class="job-title">Senior SDET</span> at <span class="company">Quality Tech Solutions</span></p>
+                <p class="date">January 2021 - Present</p>
+                <ul>
+                    <li>Lead the development and maintenance of automated test suites using Selenium, TestNG, and Java, increasing test coverage by 40%</li>
+                    <li>Implemented and optimized CI/CD pipelines, reducing deployment time by 30% and improving overall software quality</li>
+                    <li>Collaborated with developers to integrate testing processes early in the development lifecycle, leading to a 20% reduction in bugs found in production</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <p><span class="job-title">QA Automation Engineer</span> at <span class="company">Tech Innovators</span></p>
+                <p class="date">June 2018 - December 2020</p>
+                <ul>
+                    <li>Designed and implemented a JavaScript-based automated testing framework, reducing testing time by 50%</li>
+                    <li>Conducted end-to-end testing of web applications, ensuring functionality across multiple browsers and devices</li>
+                    <li>Collaborated with QA team to write comprehensive test plans and scripts, improving overall software reliability</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <p><span class="degree">Bachelor of Science in Computer Science</span> - <span class="school">University of Nairobi</span></p>
+                <p class="date">2014 - 2018</p>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">Selenium</span>
+                <span class="skill">Cypress</span>
+                <span class="skill">Playwright</span>
+                <span class="skill">Java</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">CI/CD</span>
+                <span class="skill">Test Automation</span>
+                <span class="skill">API Testing</span>
+                <span class="skill">Postman</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
